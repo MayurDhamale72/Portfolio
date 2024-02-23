@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/eb80662aff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="mayur-high-resolution-logo-transparent.png" alt=" " class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span> Mayur</span> <br> Dhamale From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div id="row">
+                <div class="about-col-1">
+                    <img src="PSX_20240215_082933.png" alt="">
+                </div>    
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="about-me">Dynamic and ambitious final-year B.Tech student
+                        with a passion for technology and a strong desire
+                        to take on challenging opportunities.
+                        Demonstrated adaptability through an internship
+                        in data engineering at Celebal Technology and
+                        currently contributing as a Software Engineer
+                        Intern at SRW Softwares. Eager to apply my skills,
+                        learn, and thrive in a dynamic professional
+                        environment.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Analytics</span><br>Analyzing historical data and building predictive ML models</li>
+                            <li><span>Web Developement</span><br>Web app Developement</li>
+                            <li><span>App Developement</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>01/2024 - Current</span><br>Software Engineer Intern at SRW Softwares</li>
+                            <li><span>05/2023 - 12/2024</span><br>Data Science Training at Sanjivani AI Technology</li>
+                            <li><span>03/2023-08/2023 </span><br>Data Engineer Intern at Celebal Technology</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>B-TECH [Electronics & Computer Engineering]</li>
+                            <li><span>2020</span><br>HSC</li>
+                            <li><span>2018</span><br>SSC</li>
+                        </ul>
+                    </div>
+                </div>   
+            </div>
+
+        </div>
+
+    </div>
+     <!-- Servises -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Our web design service focuses on creating visually appealing and user-friendly
+                         websites tailored to meet the unique needs of our clients. From sleek and modern
+                          designs to more intricate and interactive interfaces, we prioritize creativity,
+                           functionality, and responsiveness. Whether you're a small business looking to 
+                           establish an online presence or a larger organization aiming to revamp your website,
+                            our team is dedicated to delivering designs that captivate audiences and drive
+                             engagement.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-simple"></i>
+                    <h2>Data Science</h2>
+                    <p>With our data science service, we harness the power of data to extract
+                         valuable insights and make informed decisions. From predictive analytics
+                          to machine learning algorithms, we employ cutting-edge techniques to analyze
+                           large datasets and uncover hidden patterns, trends, and correlations. Whether
+                            you're seeking to optimize business operations, enhance marketing strategies,
+                             or gain a deeper understanding of your customers, our data-driven approach 
+                             enables you to unlock the full potential of your data and drive business growth.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Our Android/iOS app development service empowers businesses and individuals to
+                         bring their ideas to life in the form of intuitive and feature-rich mobile
+                          applications. From concept to deployment, we collaborate closely with our 
+                          clients to understand their vision, goals, and target audience, ensuring
+                           that the end product aligns perfectly with their requirements. Whether you're 
+                           looking to streamline internal processes, engage customers on-the-go, or launch
+                            a new digital product, our experienced developers leverage the latest technologies
+                             and best practices to deliver high-quality apps that stand out in the competitive app market.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- portfolio -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people 
+                            around the world</p>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App App</h3>
+                        <p>The app connects you to the talented people 
+                            around the world</p>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="">
+                    <div class="layer">
+                         <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people 
+                            around the world</p>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+     <!-- contact -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>mayurdhamale72@gmail.com</p>
+                    <p><i class="fas fa-square-phone"></i>9373558252</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="Mayur Resume Web Dev.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Mayur. Made with <i class="fas fa-heart"></i>by Mayur</p>
+        </div>
+     </div>
+    <script type="text/javascript">
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right='0';
+        }
+        function closemenu(){
+            sidemenu.style.right='-200px';
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbydTjfw_Iegj3Joj7L5isyeevmvVfb9q0bI-ldKPB_0Ay5nMHEOYjhZFnVIbX8fN0LU/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML='Message sent successfully'
+                setTimeout(function(){
+                    msg.innerHTML=''
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
